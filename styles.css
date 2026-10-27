@@ -21,4 +21,19 @@
   display: block;
   object-fit: cover;
   border-radius: inherit;
+  /* Resize hero portrait */
+.portrait-area {
+  min-width: 0;
+}
+
+.portrait-area .portrait img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center bottom;
+}
+
+.portrait-area .portrait {
+  overflow: hidden;
+}
 }
