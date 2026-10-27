@@ -35,5 +35,29 @@
 
 .portrait-area .portrait {
   overflow: hidden;
+  /* Keep skill mapping image within the hero's right column */
+.portrait-area {
+  width: 100%;
+  min-width: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portrait-area .portrait {
+  width: min(100%, 360px);
+  height: 420px;
+  max-height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.portrait-area .portrait img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center bottom;
+  display: block;
+}
 }
 }
